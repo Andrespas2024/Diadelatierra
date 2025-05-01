@@ -1,0 +1,178 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1s ease;
+}
+
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.bienvenida, .tabla-section, .formulario-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen-principal {
+    width: 250px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.imagen-principal:hover {
+    transform: scale(1.05);
+}
+
+.boton-curioso {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-curioso:hover {
+    background-color: #1e8449;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    animation: fadeIn 2s ease;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #ecf0f1;
+    transition: background-color 0.3s;
+}
+
+form.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form.formulario input, form.formulario textarea, form.formulario button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form.formulario button {
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form.formulario button:hover {
+    background-color: #27ae60;
+}
+
+#preview img {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Animaciones */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+section {
+    margin: 40px 0;
+}
+
+.importancia, .acciones, .historia, .frase-inspiradora {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+ul li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #2e7d32;
+    border-left: 5px solid #81c784;
+    margin: 20px auto;
+    padding-left: 15px;
+    max-width: 600px;
+}
+
+footer {
+    text-align: center;
+}
